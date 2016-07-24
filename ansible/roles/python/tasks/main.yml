@@ -1,0 +1,6 @@
+- name: python | Install Python Packages
+  sudo: yes
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - python-dev
+    - python-pip
